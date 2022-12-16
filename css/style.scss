@@ -1,0 +1,81 @@
+$header-color:#381a56;
+
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header{
+    background-color: $header-color;
+}
+nav ul li{
+    list-style-type:none;
+}
+
+nav ul li a{
+     text-decoration: none;
+     color: white;
+}
+nav ul li a:hover{
+    color: black;
+    
+}
+.hero{
+    background-color: #c5c5e9;
+}
+.form-group{
+    border: 1px solid #000;
+    border-radius: .375rem;
+}
+.float-left{
+    float: left;
+}
+
+.register{
+     background-color:#eee6fd;
+}
+.map-bg{
+    background-color: #3d3d3f;
+}
+
+.bar i{
+    color: white;
+    transition: all .5s;
+    cursor: pointer;
+}
+.bar i:hover{
+    color: black; transition: all .5s;
+    cursor: pointer;
+}
+.border-bottom-5{
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+.bar{
+    display: none;
+}
+@media only screen and(max-width:600px){
+   
+    .bar{
+        display: block;
+         position: relative;
+         z-index: 10000;   
+         
+         i{
+            color: rgb(138, 138, 138);
+         }
+    }
+ nav{
+    position: absolute;
+    top: 0px;
+    padding-top: 30px;
+    left:100%;
+    width:100vw;
+    background-color: #fff;
+     ul{
+        flex-direction: column;
+        li a{
+            color: black;
+        }
+     }
+ }
+
+}
